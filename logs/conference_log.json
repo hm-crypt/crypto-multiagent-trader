@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2026-01-29T12:05:12.564895",
+    "signal": {
+      "symbol": "BTC",
+      "action": "buy",
+      "position_size": 25
+    },
+    "decisions": [
+      {
+        "agent": "前田利家",
+        "decision": "OK",
+        "reason": "RSI=55.0OK / ボリンジャーバンド内OK / ボラティリティ許容範囲内"
+      },
+      {
+        "agent": "織田信長",
+        "decision": "OK",
+        "reason": "期待リターン18.0%（良好） / ポジション25.0%OK / シャープレシオ5.62OK"
+      },
+      {
+        "agent": "明智光秀",
+        "decision": "OK",
+        "reason": "VaR=3.2%OK / 最大DD推定8.0%OK / ファンダ78点OK"
+      },
+      {
+        "agent": "柴田勝家",
+        "decision": "OK",
+        "reason": "ポジション集中度25%OK / 相関0.50OK / RR比5.62OK"
+      }
+    ],
+    "final_decision": "OK",
+    "final_reason": "全員OK。実行する"
+  },
+  {
+    "timestamp": "2026-01-29T12:05:12.941446",
+    "signal": {
+      "symbol": "ETH",
+      "action": "buy",
+      "position_size": 45
+    },
+    "decisions": [
+      {
+        "agent": "前田利家",
+        "decision": "OK",
+        "reason": "RSI=52.0OK / ボリンジャーバンド内OK / ボラティリティ許容範囲内"
+      },
+      {
+        "agent": "織田信長",
+        "decision": "条件付き",
+        "reason": "期待リターン12.0%（微妙） / ポジション45.0%OK / シャープレシオ1.41OK"
+      },
+      {
+        "agent": "明智光秀",
+        "decision": "条件付き",
+        "reason": "VaR=8.5%（要注意） / 最大DD推定21.2%（限界） / ファンダ65点（要警戒）"
+      },
+      {
+        "agent": "柴田勝家",
+        "decision": "条件付き",
+        "reason": "ポジション集中度45%OK / 相関0.65OK / RR比1.41（要確認）"
+      }
+    ],
+    "final_decision": "OK",
+    "final_reason": "条件統合中...(3人が条件付き) → 修正案で対応可能と判断 → 実行"
+  },
+  {
+    "timestamp": "2026-01-29T12:05:13.315317",
+    "signal": {
+      "symbol": "新規ALT",
+      "action": "buy",
+      "position_size": 50
+    },
+    "decisions": [
+      {
+        "agent": "前田利家",
+        "decision": "NG",
+        "reason": "RSI=85.0（過熱/過売） / ボリンジャーバンド外(-1.30) / ボラティリティ過高(2.10x)"
+      },
+      {
+        "agent": "織田信長",
+        "decision": "OK",
+        "reason": "期待リターン25.0%（良好） / ポジション50.0%OK / シャープレシオ2.08OK"
+      },
+      {
+        "agent": "明智光秀",
+        "decision": "NG",
+        "reason": "VaR=12.0%（危険） / 最大DD推定30.0%（致命的） / ファンダ35点（危険）"
+      },
+      {
+        "agent": "柴田勝家",
+        "decision": "NG",
+        "reason": "ポジション集中度50%OK / 相関0.92（同向リスク） / RR比2.08OK"
+      }
+    ],
+    "final_decision": "NG",
+    "final_reason": "誰か1人（3人）がNGを出した。全員一致が不可能"
+  }
+]
